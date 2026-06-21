@@ -1,4 +1,4 @@
-/* Paavathon Runners - Custom Styles */
+/* Pavvathon Runners - Custom Styles */
 :root {
   --color-primary: #e8552d;
   --color-primary-dark: #c9431e;
@@ -182,7 +182,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Cards */
 .br-card {
-  background: #fff;
+  background: #ff6a0029;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 16px;
   padding: 1.5rem;
@@ -866,4 +866,20 @@ h1, h2, h3, h4, h5, h6,
   .site-footer {
     padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
   }
+}
+
+
+.navbar-brand img {
+    object-fit: contain;
+}
+
+.navbar-brand small {
+    font-size: 11px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.navbar-brand .fw-bold {
+    font-size: 1.3rem;
+    line-height: 1.1;
 }

@@ -1,4 +1,4 @@
-// Paavathon Runners - Simple interactions
+// Pavvathon Runners - Simple interactions
 
 document.addEventListener('DOMContentLoaded', function () {
   // Register service worker (PWA)

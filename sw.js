@@ -1,5 +1,5 @@
-/* Paavathon Runners — Service Worker */
-var CACHE_NAME = 'paavathon-runners-v1';
+/* Pavvathon Runners — Service Worker */
+var CACHE_NAME = 'Pavvathon-runners-v1';
 var OFFLINE_URL = 'index.html';
 
 var PRECACHE_URLS = [

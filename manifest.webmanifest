@@ -1,6 +1,6 @@
 {
-  "name": "Paavathon Runners",
-  "short_name": "Paavathon",
+  "name": "Pavvathon Runners",
+  "short_name": "Pavvathon",
   "description": "One running community in Hyderabad — motivating people to run and sharing free community events across the city.",
   "start_url": "/",
   "scope": "/",
@@ -35,14 +35,14 @@
     {
       "name": "Our Events",
       "short_name": "Events",
-      "description": "Browse upcoming Paavathon Runners events in Hyderabad",
+      "description": "Browse upcoming Pavvathon Runners events in Hyderabad",
       "url": "/events.html",
       "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
     },
     {
       "name": "About Us",
       "short_name": "About",
-      "description": "Learn about Paavathon Runners community",
+      "description": "Learn about Pavvathon Runners community",
       "url": "/about.html",
       "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
     }
