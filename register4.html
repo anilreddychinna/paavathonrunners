@@ -15,6 +15,8 @@
 </style>
 </head>
 <body>
+
+<!-- Your existing navbar here -->
  <nav class="navbar navbar-expand-lg navbar-light site-navbar fixed-top">
 <div class="container">
 <!-- Logo + Name + Tagline -->
@@ -66,62 +68,47 @@
 <section class="py-5" style="background:#F5F9FF">
 <div class="container">
 <div class="col-lg-9 mx-auto">
-
-<div class="br-card mb-4">
-<h3>Pavvathon - 4th Edition</h3>
-<p><strong>11.11 KM Quarter Marathon</strong></p>
-<div class="row">
-<div class="col-md-6">
-<p>📅 Saturday, 11 July 2026</p>
-<p>🕠 Reporting: <b>5:30 AM</b></p>
-<p>🏁 Start: <b>6:00 AM</b></p>
-</div>
-<div class="col-md-6">
-<p>📍 Babu Jagjivan Ram Statue</p>
-<p>BHEL, Lingampally</p>
-<p>⏱ Cut-Off: 90 Minutes</p>
-</div>
-</div>
-</div>
-
 <div class="br-card">
+
 <h2 class="section-title mb-4">Register for Pavvathon - 4th Edition</h2>
-<form>
+
+<form id="registrationForm">
 
 <div class="mb-3">
 <label class="form-label">Full Name <span class="text-danger">*</span></label>
-<input class="form-control" required>
+<input id="fullName" class="form-control" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Gender <span class="text-danger">*</span></label><br>
 <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="gender" required><label class="form-check-label">Male</label>
+<input class="form-check-input" type="radio" name="gender" value="Male" required> <label class="form-check-label">Male</label>
 </div>
 <div class="form-check form-check-inline">
-<input class="form-check-input" type="radio" name="gender"><label class="form-check-label">Female</label>
+<input class="form-check-input" type="radio" name="gender" value="Female"> <label class="form-check-label">Female</label>
 </div>
 </div>
 
 <div class="row">
 <div class="col-md-6 mb-3">
 <label class="form-label">Date Of Birth <span class="text-danger">*</span></label>
-<input type="date" class="form-control" required>
+<input id="dob" type="date" class="form-control" required>
 </div>
+
 <div class="col-md-6 mb-3">
 <label class="form-label">Mobile Number <span class="text-danger">*</span></label>
-<input class="form-control" maxlength="10" required>
+<input id="mobile" maxlength="10" class="form-control" required>
 </div>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Email ID <span class="text-danger">*</span></label>
-<input type="email" class="form-control" required>
+<input id="email" type="email" class="form-control" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Select Event Category <span class="text-danger">*</span></label>
-<select class="form-select" required>
+<select id="category" class="form-select" required>
 <option value="">Select Category</option>
 <option>Half Pavvathon - 5.5 KM</option>
 <option>Pavvathon - 11.11 KM</option>
@@ -130,57 +117,178 @@
 
 <div class="mb-3">
 <label class="form-label">Strava ID or Link</label>
-<input class="form-control" placeholder="https://www.strava.com/athletes/...">
+<input id="strava" class="form-control">
 </div>
 
 <div class="row">
 <div class="col-md-6 mb-3">
 <label class="form-label">Blood Group <span class="text-danger">*</span></label>
-<select class="form-select" required>
+<select id="bloodGroup" class="form-select" required>
 <option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
 </select>
 </div>
 
 <div class="col-md-6 mb-3">
 <label class="form-label">Are you participating for the first time? <span class="text-danger">*</span></label><br>
-<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="first" required><label class="form-check-label">Yes</label></div>
-<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="first"><label class="form-check-label">No</label></div>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="firstTime" value="Yes" required><label class="form-check-label">Yes</label></div>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="firstTime" value="No"><label class="form-check-label">No</label></div>
 </div>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Emergency Contact Name <span class="text-danger">*</span></label>
-<input class="form-control" required>
+<input id="emergencyName" class="form-control" required>
 </div>
 
 <div class="mb-3">
 <label class="form-label">Emergency Contact Number <span class="text-danger">*</span></label>
-<input class="form-control" required>
+<input id="emergencyNumber" class="form-control" required>
 </div>
 
 <div class="mb-4">
 <label class="form-label">Any Medical Conditions (Optional)</label>
-<textarea class="form-control" rows="3"></textarea>
+<textarea id="medical" class="form-control"></textarea>
 </div>
 
 <div class="tc-box mb-4">
 <h5>Terms & Conditions <span class="text-danger">*</span></h5>
-<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I declare that I am medically fit to participate in this event.</label></div>
-<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I understand that the organizers are not responsible for any injury or loss during the event.</label></div>
-<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I agree that my photographs/videos taken during the event may be used for promotional purposes.</label></div>
-<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I agree to the event rules and regulations.</label></div>
+<div class="form-check"><input id="tc1" class="form-check-input" type="checkbox" required><label class="form-check-label">I declare that I am medically fit to participate in this event.</label></div>
+<div class="form-check"><input id="tc2" class="form-check-input" type="checkbox" required><label class="form-check-label">I understand the organizers are not responsible for injury or loss.</label></div>
+<div class="form-check"><input id="tc3" class="form-check-input" type="checkbox" required><label class="form-check-label">I agree that my photographs/videos may be used for promotional purposes.</label></div>
+<div class="form-check"><input id="tc4" class="form-check-input" type="checkbox" required><label class="form-check-label">I agree to the event rules and regulations.</label></div>
 </div>
 
-<button class="btn btn-primary-br btn-lg w-100">🏃 Register for 4th Edition</button>
+<button class="btn btn-primary-br btn-lg w-100" type="submit">🏃 Register for 4th Edition</button>
+
 </form>
-</div>
 
+</div>
+</div>
 </div>
 </section>
 </main>
 
-<footer class="site-footer"><div class="container text-center"><p>© 2026 Pavvathon Team</p></div></footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/register.js"></script>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', async function (e) {
+
+    e.preventDefault();
+
+    const formData = new FormData();
+
+    // ==========================
+    // Date of Birth
+    // ==========================
+    const dob = document.getElementById('dob').value;
+    const dobDate = new Date(dob);
+
+    // ==========================
+    // Form Fields
+    // ==========================
+    formData.append('entry.51832507', document.getElementById('fullName').value);
+
+    formData.append(
+        'entry.86355697',
+        document.querySelector('input[name="gender"]:checked').value
+    );
+
+    formData.append('entry.1535260663_year', dobDate.getFullYear());
+    formData.append('entry.1535260663_month', dobDate.getMonth() + 1);
+    formData.append('entry.1535260663_day', dobDate.getDate());
+
+    formData.append('entry.1127046914', document.getElementById('mobile').value);
+    formData.append('entry.1511024797', document.getElementById('email').value);
+    formData.append('entry.1958124188', document.getElementById('category').value);
+    formData.append('entry.985149600', document.getElementById('strava').value);
+    formData.append('entry.1512377586', document.getElementById('bloodGroup').value);
+
+    formData.append(
+        'entry.1089065675',
+        document.querySelector('input[name="firstTime"]:checked').value
+    );
+
+    formData.append('entry.1761988073', document.getElementById('emergencyName').value);
+    formData.append('entry.868551195', document.getElementById('emergencyNumber').value);
+    formData.append('entry.769218911', document.getElementById('medical').value);
+
+    // ==========================
+    // Terms & Conditions
+    // ==========================
+    formData.append(
+        'entry.173480347',
+        'I declare that I am medically fit to participate in this event.'
+    );
+
+    formData.append(
+        'entry.173480347',
+        'I understand that the organizers are not responsible for any injury or loss during the event'
+    );
+
+    formData.append(
+        'entry.173480347',
+        'I agree that my photographs/videos taken during the event may be used for promotional purposes.'
+    );
+
+    formData.append(
+        'entry.173480347',
+        'I agree to the event rules and regulations.'
+    );
+
+    // ==========================
+    // Sentinel Fields
+    // ==========================
+    formData.append('entry.86355697_sentinel', '');
+    formData.append('entry.1958124188_sentinel', '');
+    formData.append('entry.1089065675_sentinel', '');
+    formData.append('entry.173480347_sentinel', '');
+
+    // ==========================
+    // Debug Output
+    // ==========================
+    console.log("======================================");
+    console.log("PAVVATHON REGISTRATION DATA");
+    console.log("======================================");
+
+    for (const [key, value] of formData.entries()) {
+        console.log(key + " : " + value);
+    }
+
+    console.log("======================================");
+
+    console.log("Terms & Conditions");
+    console.log(formData.getAll('entry.173480347'));
+
+    try {
+
+        console.log("Submitting Google Form...");
+
+        const response = await fetch(
+            'https://docs.google.com/forms/d/e/1FAIpQLScoyxKKmuwzbC4tYecgHmp6IQkzDOTLK3ywWz5jD6lzX880Gw/formResponse',
+            {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            }
+        );
+
+        console.log("Submission completed.");
+        console.log("Response:", response);
+        console.log("Response Type:", response.type);
+
+        alert("🎉 Thank you for registering for Pavvathon 4th Edition!");
+
+        document.getElementById('registrationForm').reset();
+
+    } catch (err) {
+
+        console.error("Submission Failed");
+        console.error(err);
+
+        alert("Unable to submit registration. Please try again.");
+
+    }
+
+});
+</script>
+
 </body>
 </html>

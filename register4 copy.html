@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pavvathon - 4th Edition Registration</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<style>
+.form-label{font-weight:600;color:#15255F}
+.form-control,.form-select{border-radius:10px;padding:12px}
+.form-check-input:checked{background:#0251C3;border-color:#0251C3}
+.text-danger{color:#FF7600!important}
+.tc-box{background:#F5F9FF;border:1px solid rgba(2,81,195,.08);padding:20px;border-radius:12px}
+</style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light site-navbar fixed-top">
+<div class="container">
+<!-- Logo + Name + Tagline -->
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+<img alt="Pavvathon Logo" class="me-2" height="50" src="images/logo-512.png" width="50"/>
+<div>
+<div class="fw-bold">
+          Pavvathon<span class="text-primary"></span>
+</div>
+<small class="text-muted d-block">
+          Conquer The Quarter
+        </small>
+</div>
+</a>
+<button class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="mainNav">
+    <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="register4.html">Register</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+        </li>
+
+    </ul>
+</div>
+
+</div>
+</nav>
+
+
+<main>
+<section class="page-header">
+<div class="container text-center">
+<h1>Pavvathon - 4th Edition</h1>
+<p class="lead">Monsoon Run at BHEL</p>
+<p><strong>Saturday, 11 July 2026</strong></p>
+</div>
+</section>
+
+<section class="py-5" style="background:#F5F9FF">
+<div class="container">
+<div class="col-lg-9 mx-auto">
+
+<div class="br-card mb-4">
+<h3>Pavvathon - 4th Edition</h3>
+<p><strong>11.11 KM Quarter Marathon</strong></p>
+<div class="row">
+<div class="col-md-6">
+<p>📅 Saturday, 11 July 2026</p>
+<p>🕠 Reporting: <b>5:30 AM</b></p>
+<p>🏁 Start: <b>6:00 AM</b></p>
+</div>
+<div class="col-md-6">
+<p>📍 Babu Jagjivan Ram Statue</p>
+<p>BHEL, Lingampally</p>
+<p>⏱ Cut-Off: 90 Minutes</p>
+</div>
+</div>
+</div>
+
+<div class="br-card">
+<h2 class="section-title mb-4">Register for Pavvathon - 4th Edition</h2>
+<form>
+
+<div class="mb-3">
+<label class="form-label">Full Name <span class="text-danger">*</span></label>
+<input class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Gender <span class="text-danger">*</span></label><br>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="gender" required><label class="form-check-label">Male</label>
+</div>
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="radio" name="gender"><label class="form-check-label">Female</label>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-3">
+<label class="form-label">Date Of Birth <span class="text-danger">*</span></label>
+<input type="date" class="form-control" required>
+</div>
+<div class="col-md-6 mb-3">
+<label class="form-label">Mobile Number <span class="text-danger">*</span></label>
+<input class="form-control" maxlength="10" required>
+</div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email ID <span class="text-danger">*</span></label>
+<input type="email" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Select Event Category <span class="text-danger">*</span></label>
+<select class="form-select" required>
+<option value="">Select Category</option>
+<option>Half Pavvathon - 5.5 KM</option>
+<option>Pavvathon - 11.11 KM</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Strava ID or Link</label>
+<input class="form-control" placeholder="https://www.strava.com/athletes/...">
+</div>
+
+<div class="row">
+<div class="col-md-6 mb-3">
+<label class="form-label">Blood Group <span class="text-danger">*</span></label>
+<select class="form-select" required>
+<option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option>
+</select>
+</div>
+
+<div class="col-md-6 mb-3">
+<label class="form-label">Are you participating for the first time? <span class="text-danger">*</span></label><br>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="first" required><label class="form-check-label">Yes</label></div>
+<div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="first"><label class="form-check-label">No</label></div>
+</div>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Emergency Contact Name <span class="text-danger">*</span></label>
+<input class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Emergency Contact Number <span class="text-danger">*</span></label>
+<input class="form-control" required>
+</div>
+
+<div class="mb-4">
+<label class="form-label">Any Medical Conditions (Optional)</label>
+<textarea class="form-control" rows="3"></textarea>
+</div>
+
+<div class="tc-box mb-4">
+<h5>Terms & Conditions <span class="text-danger">*</span></h5>
+<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I declare that I am medically fit to participate in this event.</label></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I understand that the organizers are not responsible for any injury or loss during the event.</label></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I agree that my photographs/videos taken during the event may be used for promotional purposes.</label></div>
+<div class="form-check"><input class="form-check-input" type="checkbox" required><label class="form-check-label">I agree to the event rules and regulations.</label></div>
+</div>
+
+<button class="btn btn-primary-br btn-lg w-100">🏃 Register for 4th Edition</button>
+</form>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container text-center"><p>© 2026 Pavvathon Team</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/register.js"></script>
+</body>
+</html>
