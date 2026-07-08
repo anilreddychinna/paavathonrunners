@@ -1,13 +1,13 @@
 /* Pavvathon Runners - Custom Styles */
 :root {
-  --color-primary: #e8552d;
-  --color-primary-dark: #c9431e;
-  --color-accent: #1a9e8f;
-  --color-bg: #fafafa;
-  --color-text: #1a1a2e;
-  --color-text-secondary: #555570;
-  --color-text-muted: #8e8ea0;
-  --color-dark: #1d1e27;
+  --color-primary: #0251C3;
+  --color-primary-dark: #0212A1;
+  --color-accent: #FF7600;
+  --color-bg: #FFFFFF;
+  --color-text: #15255F;
+  --color-text-secondary: #4F5F7A;
+  --color-text-muted: #7A869A;
+  --color-dark: #15255F;
   --header-height: 80px;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6,
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(2,81,195,.08);
   min-height: var(--header-height);
   padding-top: 0;
   padding-bottom: 0;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .site-navbar .navbar-toggler:focus {
-  box-shadow: 0 0 0 3px rgba(232, 85, 45, 0.25);
+  box-shadow: 0 0 0 3px rgba(2,81,195,.25);
 }
 
 .site-navbar .navbar-brand {
@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6,
   align-items: center;
   position: relative;
   color: #fff;
-  background: linear-gradient(135deg, rgba(26, 26, 46, 0.85), rgba(232, 85, 45, 0.75)),
+  background: linear-gradient(135deg, rgba(21,37,95,.92), rgba(2,81,195,.78)),
     url('https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=1920&q=80') center/cover no-repeat;
 }
 
@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6,
 .stats-section {
   background: #fff;
   padding: 3rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid rgba(2,81,195,.08);
 }
 
 .stat-number {
@@ -182,8 +182,8 @@ h1, h2, h3, h4, h5, h6,
 
 /* Cards */
 .br-card {
-  background: #ff6a0029;
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: #FFFFFF;
+  border: 1px solid rgba(2,81,195,.08);
   border-radius: 16px;
   padding: 1.5rem;
   height: 100%;
@@ -224,7 +224,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .badge-distance {
-  background: rgba(232, 85, 45, 0.12);
+  background: rgba(2,81,195,.10);
   color: var(--color-primary);
   font-weight: 600;
   padding: 0.35rem 0.75rem;
@@ -232,7 +232,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .badge-free {
-  background: rgba(26, 158, 143, 0.12);
+  background: rgba(255,118,0,.12);
   color: var(--color-accent);
   font-weight: 600;
 }
@@ -524,7 +524,7 @@ h1, h2, h3, h4, h5, h6,
     padding: 0.75rem 1.25rem 1rem;
     border-radius: 0 0 12px 12px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(2,81,195,.08);
     border-top: none;
   }
 
@@ -882,4 +882,40 @@ h1, h2, h3, h4, h5, h6,
 .navbar-brand .fw-bold {
     font-size: 1.3rem;
     line-height: 1.1;
+}
+
+
+/* ===== Pavvathon 2026 Brand Overrides ===== */
+:root{
+ --color-secondary:#0C4EBB;
+ --color-highlight:#FF7600;
+ --color-light:#F5F9FF;
+ --color-card-border:rgba(2,81,195,.08);
+}
+body{background:#FFFFFF;}
+.stats-section,.brand-section:nth-child(even){background:#F5F9FF;}
+.br-card{
+ background:#FFFFFF;
+ border:1px solid rgba(2,81,195,.08);
+ box-shadow:0 10px 25px rgba(2,81,195,.08);
+}
+.br-card:hover{box-shadow:0 18px 40px rgba(2,81,195,.18);}
+.hero-title .highlight{color:#FF7600!important;}
+.btn-primary-br{
+ background:#0251C3;
+ border-color:#0251C3;
+}
+.btn-primary-br:hover{
+ background:#0212A1;
+ border-color:#0212A1;
+}
+.site-footer,.newsletter-section,.page-header{
+ background:#15255F!important;
+}
+.filter-chip:hover,.filter-chip.active{
+ background:#0251C3;
+ border-color:#0251C3;
+}
+.form-section-title{
+ border-bottom-color:#FF7600;
 }
