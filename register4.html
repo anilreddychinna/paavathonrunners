@@ -72,6 +72,106 @@
 
 <h2 class="section-title mb-4">Register for Pavvathon - 4th Edition</h2>
 
+
+<div id="successCard" class="d-none">
+
+    <div class="br-card text-center p-5">
+
+        <div style="font-size:80px;">🎉</div>
+
+        <h2 class="mb-3" style="color:#0251C3;">
+            Registration Successful!
+        </h2>
+
+        <p class="lead">
+            <strong>Thank you for registering for</strong><br>
+            <strong style="color:#FF7600;">Pavvathon - 4th Edition</strong>
+        </p>
+
+        <p>
+            We are excited to welcome you to the
+            <strong>Monsoon Run at BHEL.</strong>
+        </p>
+
+        <hr>
+
+        <h5 style="color:#15255F;">📅 Event Details</h5>
+
+        <p class="mb-4">
+
+            <strong>Date:</strong> Saturday, 11 July 2026
+
+            <br>
+
+            <strong>Reporting:</strong> 5:30 AM
+
+            <br>
+
+            <strong>Run Starts:</strong> 6:00 AM
+
+            <br>
+
+            <strong>Venue:</strong>
+
+            Babu Jagjivan Ram Statue,
+
+            BHEL, Lingampally
+
+        </p>
+
+        <div class="d-grid gap-3">
+
+            <a href="register4.html"
+               class="btn btn-primary-br btn-lg">
+
+                🏃 Register Another Runner
+
+            </a>
+
+            <a href="https://www.strava.com/clubs/pavvathon"
+               
+               class="btn btn-warning btn-lg text-dark fw-bold">
+
+                🏅 Join Pavvathon Strava Club
+
+            </a>
+
+            <a href="https://maps.app.goo.gl/jSjSfPrPzUj22TRQ9"
+               
+               class="btn btn-outline-primary btn-lg">
+
+                📍 Open Event Location
+
+            </a>
+
+            <a href="https://www.instagram.com/pavvathon"
+              
+               class="btn btn-outline-danger btn-lg">
+
+                📷 Follow on Instagram
+
+            </a>
+
+        </div>
+
+        <div class="mt-5">
+
+            <h5 style="color:#15255F;">
+                Small Steps. Extraordinary Progress.
+            </h5>
+
+            <h4 style="color:#FF7600;">
+                Conquer The Quarter.
+            </h4>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
 <form id="registrationForm">
 
 <div class="mb-3">
@@ -173,6 +273,21 @@
 </section>
 </main>
 <script>
+
+    function showSuccessCard() {
+
+    document.getElementById("registrationForm").style.display = "none";
+
+    document.getElementById("successCard").classList.remove("d-none");
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
 document.getElementById('registrationForm').addEventListener('submit', async function (e) {
 
     e.preventDefault();
@@ -306,6 +421,8 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
         alert("🎉 Registration submitted successfully!");
 
         this.reset();
+
+        showSuccessCard();
 
     } catch (err) {
 
